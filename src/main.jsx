@@ -16,6 +16,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<Layout />}>
       <Route path="" element={<Home />} />
       <Route path="post" element={<Post />} />
+      <Route path="post/:PostId" element={<Post />} />
       <Route path="author" element={<Author />} />
       <Route path="contact" element={<Contact />} />
     </Route>,
