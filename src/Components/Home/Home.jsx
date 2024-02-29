@@ -1,41 +1,27 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
 
 const Home = () => {
-  const blogPosts = [
-    { id: 1, title: 'First Post', content: 'Content of the first post.' },
-    { id: 2, title: 'Second Post', content: 'Content of the second post.' },
-    { id: 3, title: 'Third Post', content: 'Content of the third post.' },
-    { id: 4, title: 'Forth Post', content: 'Content of the forth post.' },
-  ]
   return (
     <>
-      <div className="container mx-auto mt-8 text-center justify-center">
-        <h2 className="text-3xl font-bold mb-4">Welcome to My Blog</h2>
-        <p className="mb-6 mx-8 text-gray-500 w-auto">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam
-          illum pariatur harum. Possimus cumque est laudantium dignissimos?
-          Sint, obcaecati aliquam! Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Sapiente odio sunt ipsam asperiores facere
-          consequatur ab dicta quisquam laborum ducimus.
+      <div className="container m-auto text-center align-middle">
+        <h2 className="text-3xl font-semibold my-4">Welcome to My Blog</h2>
+        <p className="m-auto text-gray-500 w-auto text-center">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
+          temporibus ullam assumenda impedit consequuntur sint accusamus a
+          officia fuga? Atque error voluptatum totam, id quisquam consequuntur
+          necessitatibus cum optio facere possimus nam aperiam corrupti tempore
+          illum deserunt maiores officiis assumenda. Tempora soluta dolore
+          molestiae maxime at necessitatibus voluptatum perspiciatis quos!
         </p>
-        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-6">
-          {blogPosts.map((post) => (
-            <li key={post.id} className="bg-white p-6 rounded-md shadow-md">
-              <h3 className="text-xl font-semibold mb-2">{post.title}</h3>
-              <p className="text-gray-700">{post.content}</p>
-              <Link
-                to={`/post/${post.id}`}
-                className="mt-4 block text-blue-500 hover:underline"
-              >
-                Read More
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <p className="mt-8 text-gray-500 w-auto text-center">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea,
+          reprehenderit ex. Ad corrupti vel quam suscipit, dignissimos nemo quo.
+          Eius sunt inventore porro repudiandae consectetur magni aut amet ipsa
+          quia?
+        </p>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
