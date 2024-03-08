@@ -3,9 +3,9 @@ import React from "react";
 const Home = () => {
   return (
     <>
-      <div className="container m-auto text-center align-middle">
-        <h2 className="text-3xl font-semibold my-4">Welcome to My Blog</h2>
-        <p className="m-auto text-gray-500 w-auto text-center">
+      <div className="container mx-auto mt-20 text-center align-middle">
+        <h2 className="text-3xl font-semibold my-4 pt-4">Welcome to My Blog</h2>
+        <p className="w-auto m-10 text-gray-500 text-justify">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
           temporibus ullam assumenda impedit consequuntur sint accusamus a
           officia fuga? Atque error voluptatum totam, id quisquam consequuntur
@@ -13,11 +13,11 @@ const Home = () => {
           illum deserunt maiores officiis assumenda. Tempora soluta dolore
           molestiae maxime at necessitatibus voluptatum perspiciatis quos!
         </p>
-        <p className="mt-8 text-gray-500 w-auto text-center">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea,
-          reprehenderit ex. Ad corrupti vel quam suscipit, dignissimos nemo quo.
-          Eius sunt inventore porro repudiandae consectetur magni aut amet ipsa
-          quia?
+        <p className="m-10 text-gray-500 w-auto text-justify">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
+          veniam deleniti labore doloribus aspernatur quas est facere ullam?
+          Enim iusto sequi similique aut provident dolorum molestiae vitae harum
+          eos iste.
         </p>
       </div>
     </>

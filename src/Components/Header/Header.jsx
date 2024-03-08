@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <>
-      <header className="bg-gray-800 text-white p-4 sticky">
+      <header className="bg-gray-800 text-white p-4 fixed w-full top-0">
         <nav className="container mx-auto">
           <div className="flex justify-between items-center">
             <Link to="/" className="text-xl font-bold">
@@ -12,24 +13,52 @@ const Header = () => {
             </Link>
             <ul className="flex space-x-4 mr-6">
               <li>
-                <Link to="/" className="hover:text-gray-300">
-                  Home
-                </Link>
+              <NavLink
+                    to="/"
+                    className={({ isActive }) =>
+                      `hover:text-white ${
+                        isActive ? 'text-white' : 'text-gray-400'
+                      }`
+                    }
+                  >
+                    Home
+                  </NavLink>
               </li>
               <li>
-                <Link to="posts" className="hover:text-gray-300">
+              <NavLink
+                  to="/posts"
+                  className={({ isActive }) =>
+                    `hover:text-white ${
+                      isActive ? 'text-white' : 'text-gray-400'
+                    }`
+                  }
+                >
                   Posts
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="author" className="hover:text-gray-300">
+              <NavLink
+                  to="/author"
+                  className={({ isActive }) =>
+                    `hover:text-white ${
+                      isActive ? 'text-white' : 'text-gray-400'
+                    }`
+                  }
+                >
                   Author
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="contact" className="hover:text-gray-300">
+              <NavLink
+                  to="/contact"
+                  className={({ isActive }) =>
+                    `hover:text-white ${
+                      isActive ? 'text-white' : 'text-gray-400'
+                    }`
+                  }
+                >
                   Contact
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Author = () => {
   return (
     <>
-      <div className="container mx-auto mt-8">
+      <div className="container mx-auto mt-20">
         <div className="bg-white p-6 rounded-md shadow-md flex flex-col justify-center">
           <h2 className="text-2xl font-bold mb-4">About the Author</h2>
           <img
